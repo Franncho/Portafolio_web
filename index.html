@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio | Rarug Francisco</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Imagenes/1606925670701_992832461-01.jpeg">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__profile">
+            <img src="Imagenes/1606925670701_992832461-01.jpeg" alt="Foto de perfil" class="profile__image">
+        </div>
+        <div class="header__logo">
+            <h1 class="header__title">Portafolio</h1>
+        </div>
+
+
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#about">Acerca de mí</a></li>
+                <li class="nav__item"><a class="nav__link" href="#projects">Proyectos</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contact">Contacto</a></li>
+                <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+        <div class="header__social-icons">
+            <a href="https://github.com/tuusuario" target="_blank" rel="noopener" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/tuusuario/" target="_blank" rel="noopener" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/tunumerodetelefono" target="_blank" rel="noopener" class="social-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="section-about" id="about">
+            <div class="container">
+                <h2 class="section__title">Acerca de mí</h2>
+                <p class="section__description">Hola, mi nombre es Francisco y soy un desarrollador web con experiencia
+                    en
+                    HTML, CSS y JavaScript. Me apasiona crear sitios web y aplicaciones que sean intuitivas, fáciles de
+                    usar y estéticamente atractivas.
+                </p>
+                <a href="Archivos/CV rarugFrancisco.pdf" download class="boton-descarga">Descargar currículum</a>
+
+            </div>
+        </section>
+        <section class="section-projects" id="projects">
+            <div class="container">
+                <h2 class="section__title">Proyectos</h2>
+                <ul class="projects__list">
+                    <li class="project__item">
+                        <h3 class="project__title">Proyecto 1</h3>
+                        <p class="project__description">Descripción del proyecto 1</p>
+                        <a class="project__link" href="#">Ver proyecto</a>
+                    </li>
+                    <li class="project__item">
+                        <h3 class="project__title">Proyecto 2</h3>
+                        <p class="project__description">Descripción del proyecto 2</p>
+                        <a class="project__link" href="#">Ver proyecto</a>
+                    </li>
+                    <li class="project__item">
+                        <h3 class="project__title">Proyecto 3</h3>
+                        <p class="project__description">Descripción del proyecto 3</p>
+                        <a class="project__link" href="#">Ver proyecto</a>
+                    </li>
+                </ul>
+            </div>
+            <section class="section-skills" id="skills">
+                <div class="container">
+                    <h2 class="section__title">Skills</h2>
+                    <div class="skills__grid">
+                        <div class="skill__card">
+                            <h3 class="skill__title">HTML</h3>
+                            <div class="skill__description">
+                                <p>...</p>
+                            </div>
+                        </div>
+                        <div class="skill__card">
+                            <h3 class="skill__title">CSS</h3>
+                            <div class="skill__description">
+                                <p>...</p>
+                            </div>
+                        </div>
+                        <div class="skill__card">
+                            <h3 class="skill__title">JavaScript</h3>
+                            <div class="skill__description">
+                                <p>...</p>
+                            </div>
+                        </div>
+                        <div class="skill__card">
+                            <h3 class="skill__title">Python</h3>
+                            <div class="skill__description">
+                                <p>...</p>
+                            </div>
+                        </div>
+                        <div class="skill__card">
+                            <h3 class="skill__title">C++</h3>
+                            <div class="skill__description">
+                                <p>...</p>
+                            </div>
+                        </div>
+                        <div class="skill__card">
+                            <h3 class="skill__title">Github</h3>
+                            <div class="skill__description">
+                                <p>...</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="section-contact" id="contact">
+            <div class="container">
+                <h2 class="section__title">Contacto</h2>
+                <form class="contact__form" id="contact-form" action="https://formspree.io/f/xqkonyaz" method="POST">
+                    <label class="form__label" for="name">Nombre:</label>
+                    <input class="form__input" type="text" name="name" id="name" required>
+                    <label class="form__label" for="email">Correo electrónico:</label>
+                    <input class="form__input" type="email" name="email" id="email" required>
+                    <label class="form__label" for="message">Mensaje:</label>
+                    <textarea class="form__textarea" name="message" id="message" required></textarea>
+                    <button class="form__button" type="submit">Enviar mensaje</button>
+                </form>
+        </section>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <p>Gracias por tu mensaje. Pronto me pondre en contacto contigo.</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__item">
+                        <h3 class="footer__title">Redes sociales</h3>
+                        <ul class="footer__list">
+                            <li><a href="https://github.com/tunombre" target="_blank"><i class="fab fa-github"></i>
+                                    GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/tunombre" target="_blank"><i
+                                        class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://wa.me/tunumero" target="_blank"><i class="fab fa-whatsapp"></i>
+                                    WhatsApp</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <h3 class="footer__title">Sobre mí</h3>
+                        <p class="footer__description">¡Hola! Soy Francisco, un apasionado del desarrollo web y la
+                            tecnología en general. En este sitio comparto algunos de mis proyectos y habilidades. Si
+                            quieres contactarme, no dudes en hacerlo a través de alguna de mis redes sociales.</p>
+                        <hr class="footer__separator">
+                        <p class="footer__rights">&copy; 2023 Francisco Rarug. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="portafolio.js"></script>
+</body>
+
+</html>
