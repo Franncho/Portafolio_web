@@ -13,7 +13,13 @@
 <body>
     <header class="header">
         <div class="header__profile">
-            <img src="Imagenes/1606925670701_992832461-01.jpeg" alt="Foto de perfil" class="profile__image">
+            <div id="profile-popup" class="profile-popup">
+                <span class="close">&times;</span>
+                <img src="Imagenes/1606925670701_992832461-01.jpeg" alt="Foto de perfil ampliada"
+                    class="profile-popup__image">
+            </div>
+        </div>
+        <img src="Imagenes/1606925670701_992832461-01.jpeg" alt="Foto de perfil" class="profile__image">
         </div>
         <div class="header__logo">
             <h1 class="header__title">Portafolio</h1>
@@ -29,13 +35,14 @@
             </ul>
         </nav>
         <div class="header__social-icons">
-            <a href="https://github.com/tuusuario" target="_blank" rel="noopener" class="social-icon">
+            <a href="https://github.com/Franncho" target="_blank" rel="noopener" class="social-icon">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/tuusuario/" target="_blank" rel="noopener" class="social-icon">
+            <a href="https://www.linkedin.com/in/francisco-rarug-386942268/" target="_blank" rel="noopener"
+                class="social-icon">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://wa.me/tunumerodetelefono" target="_blank" rel="noopener" class="social-icon">
+            <a href="https://wa.me/1156936839" target="_blank" rel="noopener" class="social-icon">
                 <i class="fab fa-whatsapp"></i>
             </a>
         </div>
@@ -59,8 +66,8 @@
                 <ul class="projects__list">
                     <li class="project__item">
                         <h3 class="project__title">Proyecto 1</h3>
-                        <p class="project__description">Descripción del proyecto 1</p>
-                        <a class="project__link" href="#">Ver proyecto</a>
+                        <p class="project__description">Calculadora hecha en JavaScript, Html y Css</p>
+                        <a class="project__link" href="https://franncho.github.io/Calculadora/">Ver proyecto</a>
                     </li>
                     <li class="project__item">
                         <h3 class="project__title">Proyecto 2</h3>
@@ -81,38 +88,82 @@
                         <div class="skill__card">
                             <h3 class="skill__title">HTML</h3>
                             <div class="skill__description">
-                                <p>...</p>
+                                <p>Soy un desarrollador web con experiencia en HTML. Tengo conocimientos sólidos en
+                                    la estructura básica de HTML, etiquetas semánticas y el uso de elementos para crear
+                                    contenido web accesible y bien estructurado. También estoy familiarizado con el uso
+                                    de formularios, tablas y multimedia en HTML. Me esfuerzo por escribir un código HTML
+                                    limpio y válido, siguiendo las mejores prácticas y estándares de la industria.</p>
                             </div>
+                            <button class="skill__button" onclick="toggleDescription(this)">Ver información</button>
                         </div>
                         <div class="skill__card">
                             <h3 class="skill__title">CSS</h3>
                             <div class="skill__description">
-                                <p>...</p>
+                                <p>Tengo experiencia en CSS y puedo crear diseños atractivos y responsivos utilizando
+                                    hojas de estilo en cascada. Estoy familiarizado con los selectores, propiedades y
+                                    valores de CSS, y puedo utilizar técnicas como flexbox y CSS Grid para crear diseños
+                                    flexibles y fluidos. Además, tengo conocimientos en estilos avanzados como
+                                    animaciones CSS y media queries para adaptar el diseño a diferentes dispositivos y
+                                    tamaños de pantalla. Me esfuerzo por escribir un código CSS limpio y modular,
+                                    siguiendo las mejores prácticas y manteniendo un enfoque en la optimización y
+                                    rendimiento.</p>
                             </div>
+                            <button class="skill__button" onclick="toggleDescription(this)">Ver información</button>
                         </div>
                         <div class="skill__card">
                             <h3 class="skill__title">JavaScript</h3>
                             <div class="skill__description">
-                                <p>...</p>
+                                <p>Soy un desarrollador con experiencia en JavaScript. Me siento cómodo trabajando con
+                                    este lenguaje de programación tanto en el frontend como en el backend. Tengo
+                                    conocimientos sólidos en el uso de JavaScript para manipular el DOM, interactuar con
+                                    API, realizar peticiones AJAX y crear interacciones dinámicas en sitios web.
+                                    Siempre me mantengo actualizado sobre las últimas características y prácticas de
+                                    JavaScript para ofrecer soluciones eficientes y de alta calidad.</p>
                             </div>
+                            <button class="skill__button" onclick="toggleDescription(this)">Ver información</button>
                         </div>
                         <div class="skill__card">
                             <h3 class="skill__title">Python</h3>
                             <div class="skill__description">
-                                <p>...</p>
+                                <p>Estoy estudiando Python y tengo conocimientos básicos en el lenguaje. Me siento
+                                    cómodo trabajando con conceptos fundamentales como listas, diccionarios, bucles y
+                                    estructuras de control. A medida que continúo mi aprendizaje, estoy emocionado por
+                                    explorar áreas como la programación orientada a objetos, el desarrollo de
+                                    videojuegos y mas cosas que me puedan sorprender. Python es un lenguaje versátil y
+                                    poderoso, y estoy entusiasmado por seguir mejorando mis habilidades y aplicarlo en
+                                    una amplia gama de proyectos.</p>
                             </div>
+                            <button class="skill__button" onclick="toggleDescription(this)">Ver información</button>
                         </div>
                         <div class="skill__card">
                             <h3 class="skill__title">C++</h3>
                             <div class="skill__description">
-                                <p>...</p>
+                                <p>Tengo experiencia en programación en C++ y su aplicación en el entorno de Arduino.
+                                    Utilizo C++ para desarrollar proyectos de electrónica y programación de
+                                    microcontroladores utilizando la plataforma Arduino. Conozco los fundamentos del
+                                    lenguaje C++ y puedo escribir código eficiente y estructurado. Utilizo la librería
+                                    Arduino para acceder a los periféricos y componentes electrónicos, como sensores y
+                                    actuadores, y desarrollar proyectos interactivos.Estoy
+                                    entusiasmado por seguir aprendiendo y explorando nuevas posibilidades con C++ y
+                                    Arduino en el campo de la electrónica y la robótica.</p>
                             </div>
+                            <button class="skill__button" onclick="toggleDescription(this)">Ver información</button>
                         </div>
                         <div class="skill__card">
-                            <h3 class="skill__title">Github</h3>
+                            <h3 class="skill__title">Git y Github</h3>
                             <div class="skill__description">
-                                <p>...</p>
+                                <p>Tengo experiencia en el uso de Git y GitHub como herramientas de control de versiones
+                                    y colaboración en proyectos de desarrollo. Utilizo Git para realizar un seguimiento
+                                    eficiente de los cambios en el código fuente y para gestionar ramas de desarrollo de
+                                    forma efectiva. Además, estoy familiarizado con los comandos básicos de Git, como
+                                    clonar repositorios, crear ramas, fusionar cambios y solucionar conflictos. También
+                                    utilizo GitHub como plataforma para alojar mis proyectos y colaborar con otros
+                                    desarrolladores. Puedo crear y gestionar repositorios, realizar solicitudes de
+                                    extracción y revisar el código de otros colaboradores. Estoy comprometido a seguir
+                                    buenas prácticas de control de versiones y utilizar Git y GitHub de manera efectiva
+                                    para optimizar el flujo de trabajo y facilitar la colaboración en equipo.</p>
                             </div>
+                            <button class="skill__button" onclick="toggleDescription(this)">Ver información</button>
                         </div>
 
                     </div>
@@ -145,11 +196,11 @@
                     <div class="footer__item">
                         <h3 class="footer__title">Redes sociales</h3>
                         <ul class="footer__list">
-                            <li><a href="https://github.com/tunombre" target="_blank"><i class="fab fa-github"></i>
+                            <li><a href="https://github.com/Franncho" target="_blank"><i class="fab fa-github"></i>
                                     GitHub</a></li>
-                            <li><a href="https://www.linkedin.com/in/tunombre" target="_blank"><i
+                            <li><a href="https://www.linkedin.com/in/francisco-rarug-386942268/" target="_blank"><i
                                         class="fab fa-linkedin"></i> LinkedIn</a></li>
-                            <li><a href="https://wa.me/tunumero" target="_blank"><i class="fab fa-whatsapp"></i>
+                            <li><a href="https://wa.me/1156936839" target="_blank"><i class="fab fa-whatsapp"></i>
                                     WhatsApp</a></li>
                         </ul>
                     </div>
